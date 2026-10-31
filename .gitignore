@@ -49,3 +49,9 @@ ios/build/
 ios/**/xcuserdata/
 ios/**/*.xcworkspace/xcuserdata/
 .repo_memory/
+
+# rendered videos
+/video/out/
+
+# generated deliverables from other tools (zips, spreadsheets)
+/outputs/

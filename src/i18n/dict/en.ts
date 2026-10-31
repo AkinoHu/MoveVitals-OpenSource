@@ -5,7 +5,7 @@ const en = {
   meta: {
     siteName: "MoveVitals",
     title: "MoveVitals — All your health data in one place",
-    description: "Free, open-source and self-hostable health data hub. Connect WHOOP, Garmin, Oura, Strava, COROS, Polar and Withings (Apple Health planned via the upcoming iOS app) — every value shown with its source.",
+    description: "A free, open-source wearable data dashboard. Combine WHOOP, Garmin and Oura, trace each value to its source, and self-host your health data.",
     integrationsTitle: "Supported devices & platforms",
     integrationsDescription: "Every wearable, ring, chest strap, smart trainer and fitness platform MoveVitals connects to — and how each one connects.",
     privacyTitle: "Privacy Policy",
@@ -76,7 +76,7 @@ const en = {
     visionVitals: "Vitals — everything your body tells you.",
     visionYours: "Both are yours.",
     v1Title: "Owned by you",
-    v1Body: "Never sold, never used to train models. Export everything, delete in one click, or run MoveVitals on your own server.",
+    v1Body: "MoveVitals does not sell your data or train models on it. Export your account or self-host. Optional AI also follows your chosen provider’s policies.",
     v2Title: "All in one place",
     v2Body: "Every device and platform in a single timeline, with the source of every number kept and conflicts resolved in the open.",
     v3Title: "Yours to use",
@@ -111,7 +111,7 @@ const en = {
       },
       {
         q: "Is my health data used to train AI models?",
-        a: "No. Your data is never sold or used for training. AI analysis is optional and only runs with your own API key, sending a summary of the sources you allow to the provider you choose.",
+        a: "MoveVitals does not sell your data or use it to train models. Optional AI sends the sources you permit to the provider you choose, using your own API key; that provider’s processing and retention policies also apply.",
       },
       {
         q: "Is MoveVitals free and open source?",

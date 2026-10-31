@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Browser scripts for the video renderer (globals shared across <script> tags).
+    "video/styles/**",
   ]),
 ]);
 

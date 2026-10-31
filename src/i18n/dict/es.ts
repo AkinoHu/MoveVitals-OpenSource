@@ -4,7 +4,7 @@ const es: Dict = {
   meta: {
     siteName: "MoveVitals",
     title: "MoveVitals — Todos tus datos de salud en un solo lugar",
-    description: "Plataforma gratuita, de código abierto y autoalojable para tus datos de salud. Conecta WHOOP, Garmin, Oura, Strava, COROS, Polar y Withings (Apple Salud, prevista en la próxima app para iOS): cada valor con su fuente.",
+    description: "Panel de salud abierto y autoalojable. Unifica WHOOP, Garmin y Oura, resuelve diferencias y consulta la fuente de cada valor.",
     integrationsTitle: "Dispositivos y plataformas compatibles",
     integrationsDescription: "Todos los relojes, anillos, bandas de pecho, rodillos inteligentes y plataformas deportivas que conecta MoveVitals, y cómo se conecta cada uno.",
     privacyTitle: "Política de privacidad",
@@ -75,7 +75,7 @@ const es: Dict = {
     visionVitals: "Vitals: todo lo que tu cuerpo te dice.",
     visionYours: "Ambos son tuyos.",
     v1Title: "Tuyos y de nadie más",
-    v1Body: "Nunca se venden ni se usan para entrenar modelos. Exporta todo, bórralo con un clic o ejecuta MoveVitals en tu propio servidor.",
+    v1Body: "MoveVitals no vende tus datos ni entrena modelos con ellos. Exporta tu cuenta o autoalójala; también rigen las políticas del proveedor de IA elegido.",
     v2Title: "Todo en un solo lugar",
     v2Body: "Todos tus dispositivos y plataformas en una sola línea de tiempo, con la fuente de cada cifra y los conflictos resueltos con transparencia.",
     v3Title: "A tu servicio",
@@ -110,7 +110,7 @@ const es: Dict = {
       },
       {
         q: "¿Se usan mis datos de salud para entrenar modelos de IA?",
-        a: "No. Tus datos nunca se venden ni se usan para entrenar. El análisis con IA es opcional y solo funciona con tu propia clave de API, enviando un resumen de las fuentes que permitas al proveedor que elijas.",
+        a: "MoveVitals no vende tus datos ni los usa para entrenar modelos. La IA opcional envía las fuentes permitidas al proveedor elegido con tu clave; también se aplican sus políticas de procesamiento y retención.",
       },
       {
         q: "¿MoveVitals es gratuito y de código abierto?",

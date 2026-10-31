@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: LayoutProps<"/[locale]">): Pr
     keywords: t.meta.keywords,
     authors: [{ name: "MoveVitals" }],
     creator: "MoveVitals",
-    verification: { google: process.env.GOOGLE_SITE_VERIFICATION || undefined },
+    verification: { google: process.env.GOOGLE_SITE_VERIFICATION || undefined, other: process.env.BING_SITE_VERIFICATION ? { "msvalidate.01": process.env.BING_SITE_VERIFICATION } : undefined },
     formatDetection: { telephone: false, email: false, address: false },
     appleWebApp: { title: "MoveVitals", statusBarStyle: "black-translucent" },
   };

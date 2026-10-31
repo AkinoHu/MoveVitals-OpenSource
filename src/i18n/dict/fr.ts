@@ -4,7 +4,7 @@ const fr: Dict = {
   meta: {
     siteName: "MoveVitals",
     title: "MoveVitals — Toutes vos données de santé au même endroit",
-    description: "Plateforme gratuite, open source et auto-hébergeable pour vos données de santé. Connectez WHOOP, Garmin, Oura, Strava, COROS, Polar et Withings (Apple Santé prévu via la future app iOS) — chaque valeur avec sa source.",
+    description: "Tableau de bord santé open source et auto-hébergeable. Réunissez WHOOP, Garmin et Oura, avec une source identifiable pour chaque valeur.",
     integrationsTitle: "Appareils et plateformes pris en charge",
     integrationsDescription: "Toutes les montres, bagues, ceintures cardio, home-trainers et plateformes sportives que MoveVitals connecte — et comment chacune se connecte.",
     privacyTitle: "Politique de confidentialité",
@@ -75,7 +75,7 @@ const fr: Dict = {
     visionVitals: "Vitals — tout ce que votre corps vous dit.",
     visionYours: "Les deux vous appartiennent.",
     v1Title: "À vous, et à personne d’autre",
-    v1Body: "Jamais vendues, jamais utilisées pour entraîner des modèles. Exportez tout, supprimez en un clic, ou hébergez MoveVitals sur votre propre serveur.",
+    v1Body: "MoveVitals ne vend pas vos données et n’entraîne pas de modèles avec elles. Exportez votre compte ou auto-hébergez ; les politiques du fournisseur IA choisi s’appliquent aussi.",
     v2Title: "Tout au même endroit",
     v2Body: "Tous vos appareils et plateformes sur une seule chronologie, avec la source de chaque valeur et des conflits résolus en toute transparence.",
     v3Title: "À votre service",
@@ -110,7 +110,7 @@ const fr: Dict = {
       },
       {
         q: "Mes données de santé servent-elles à entraîner des modèles d’IA ?",
-        a: "Non. Vos données ne sont jamais vendues ni utilisées pour l’entraînement. L’analyse par IA est facultative et ne fonctionne qu’avec votre propre clé API, en envoyant un résumé des sources que vous autorisez au fournisseur de votre choix.",
+        a: "MoveVitals ne vend pas vos données et ne les utilise pas pour entraîner des modèles. L’IA facultative envoie les sources autorisées au fournisseur choisi avec votre clé ; ses politiques de traitement et de conservation s’appliquent aussi.",
       },
       {
         q: "MoveVitals est-il gratuit et open source ?",

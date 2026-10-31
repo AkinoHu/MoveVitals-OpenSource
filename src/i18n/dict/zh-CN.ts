@@ -4,7 +4,7 @@ const zhCN: Dict = {
   meta: {
     siteName: "MoveVitals",
     title: "MoveVitals — 观身之变，知生命之序",
-    description: "免费、开源、可自托管的健康数据中心。连接 WHOOP、Garmin、Oura、Strava、高驰 COROS、Polar、Withings 等多种设备（Apple 健康将通过即将推出的 iOS App 支持），每个数值都标明来源。",
+    description: "免费、开源、可自托管的个人健康数据看板，整合 WHOOP、Garmin、Oura 等来源，核对数据冲突、合并重复训练，每个数值都能追溯来源。",
     integrationsTitle: "支持的设备与平台",
     integrationsDescription: "MoveVitals 支持的所有手表、手环、戒指、心率带、骑行台与运动平台，以及每一个的接入方式。",
     privacyTitle: "隐私政策",
@@ -75,7 +75,7 @@ const zhCN: Dict = {
     visionVitals: "Vitals，是身体告诉你的每一个信号。",
     visionYours: "它们都属于你。",
     v1Title: "归你所有",
-    v1Body: "不出售，不用于训练任何模型。全部数据随时导出、一键删除，也可以把 MoveVitals 部署在你自己的服务器上。",
+    v1Body: "MoveVitals 不出售数据、不用来训练模型。可随时导出账号或自托管；可选 AI 同时适用所选服务商的政策。",
     v2Title: "汇聚一处",
     v2Body: "所有设备与平台汇成一条时间线，每个数字都保留来源，冲突公开透明地解决。",
     v3Title: "为你所用",
@@ -110,7 +110,7 @@ const zhCN: Dict = {
       },
       {
         q: "我的健康数据会被用来训练 AI 吗？",
-        a: "不会。你的数据不会被出售，也不会用于训练。AI 分析是可选的，只在你配置自己的 API Key 后运行，仅把你允许的来源的数据摘要发送给你选择的服务商。",
+        a: "MoveVitals 不出售你的数据，也不用来训练模型。可选 AI 使用你自己的 API 密钥，将允许的来源发送给你选择的服务商；该服务商的数据处理和保留政策也适用。",
       },
       {
         q: "MoveVitals 免费并且开源吗？",
