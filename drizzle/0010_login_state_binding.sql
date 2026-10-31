@@ -1,0 +1,1 @@
+ALTER TABLE "login_states" ADD COLUMN "nonce_hash" text;

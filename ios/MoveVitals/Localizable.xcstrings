@@ -1,0 +1,1036 @@
+{
+  "sourceLanguage": "en",
+  "version": "1.0",
+  "strings": {
+    "Active energy": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "活动消耗"
+          }
+        }
+      }
+    },
+    "Activities": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "活动"
+          }
+        }
+      }
+    },
+    "Allow Bluetooth access for MoveVitals in Settings.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "请在“设置”中允许 MoveVitals 使用蓝牙。"
+          }
+        }
+      }
+    },
+    "Apple Health": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 健康"
+          }
+        }
+      }
+    },
+    "Apple Health and Bluetooth data stay on this iPhone. Turn sync on in Settings to see everything from all your devices.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 健康和蓝牙数据只保存在这台 iPhone 上。在“设置”中开启同步，即可看到所有设备的数据。"
+          }
+        }
+      }
+    },
+    "Apple Health data is uploaded to your MoveVitals account so you can see it on the web and other devices.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 健康数据会上传到你的 MoveVitals 账户，方便在网页和其他设备上查看。"
+          }
+        }
+      }
+    },
+    "Apple Health isn't available on this device.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此设备不支持 Apple 健康。"
+          }
+        }
+      }
+    },
+    "Apple Health · on this iPhone": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 健康 · 仅在本机"
+          }
+        }
+      }
+    },
+    "Average heart rate": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "平均心率"
+          }
+        }
+      }
+    },
+    "Best done in the morning, sitting or lying still. The reading is saved as HRV (RMSSD) from your strap.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "建议早晨坐着或躺着保持静止时测量。结果会以心率带的 HRV（RMSSD）保存。"
+          }
+        }
+      }
+    },
+    "Blood oxygen": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "血氧"
+          }
+        }
+      }
+    },
+    "Bluetooth sensors": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "蓝牙传感器"
+          }
+        }
+      }
+    },
+    "Body Battery": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "身体电量"
+          }
+        }
+      }
+    },
+    "Body fat": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "体脂率"
+          }
+        }
+      }
+    },
+    "Can't reach MoveVitals. Check your connection.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "无法连接 MoveVitals，请检查网络。"
+          }
+        }
+      }
+    },
+    "Cancel": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "取消"
+          }
+        }
+      }
+    },
+    "Cloud platforms": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "云端平台"
+          }
+        }
+      }
+    },
+    "Cloud sync across devices": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "云端跨端同步"
+          }
+        }
+      }
+    },
+    "Cloud sync is off": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "云端同步已关闭"
+          }
+        }
+      }
+    },
+    "Cloud sync is off, so the reading stays on this iPhone.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "云端同步已关闭，本次测量只保存在这台 iPhone 上。"
+          }
+        }
+      }
+    },
+    "Cloud sync is off: Apple Health data stays on this iPhone.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "云端同步已关闭：Apple 健康数据只保存在这台 iPhone 上。"
+          }
+        }
+      }
+    },
+    "Connect Apple Health": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "连接 Apple 健康"
+          }
+        }
+      }
+    },
+    "Connect Apple Health in the Devices tab, or link WHOOP, Oura, Garmin, Strava and more on movevitals.com.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在“设备”页连接 Apple 健康，或在 movevitals.com 连接 WHOOP、Oura、Garmin、Strava 等。"
+          }
+        }
+      }
+    },
+    "Connect more on movevitals.com": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在 movevitals.com 连接更多"
+          }
+        }
+      }
+    },
+    "Continue with Google": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用 Google 继续"
+          }
+        }
+      }
+    },
+    "Couldn't save — try again": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存失败，请重试"
+          }
+        }
+      }
+    },
+    "Create account": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "创建账号"
+          }
+        }
+      }
+    },
+    "Dashboard": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "仪表盘"
+          }
+        }
+      }
+    },
+    "Devices": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "设备"
+          }
+        }
+      }
+    },
+    "Disconnect": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "断开连接"
+          }
+        }
+      }
+    },
+    "Display": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "显示"
+          }
+        }
+      }
+    },
+    "Email": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "邮箱"
+          }
+        }
+      }
+    },
+    "Export or delete your data": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "导出或删除你的数据"
+          }
+        }
+      }
+    },
+    "Free · Open source · Your data is never sold": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "免费 · 开源 · 绝不出售你的数据"
+          }
+        }
+      }
+    },
+    "Glucose": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "血糖"
+          }
+        }
+      }
+    },
+    "Google sign-in failed, please try again": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Google 登录失败，请重试"
+          }
+        }
+      }
+    },
+    "Google sign-in isn't available yet": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Google 登录暂未开放"
+          }
+        }
+      }
+    },
+    "Guides": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "指南"
+          }
+        }
+      }
+    },
+    "HRV reading": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "HRV 测量"
+          }
+        }
+      }
+    },
+    "Heart-rate sensor": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "心率传感器"
+          }
+        }
+      }
+    },
+    "I agree to the [Privacy Policy](https://movevitals.com/en/privacy) and [Terms](https://movevitals.com/en/terms), and consent to MoveVitals processing the health data I connect.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "我已阅读并同意[隐私政策](https://movevitals.com/zh-CN/privacy)和[服务条款](https://movevitals.com/zh-CN/terms)，并同意 MoveVitals 处理我连接的健康数据。"
+          }
+        }
+      }
+    },
+    "I already have an account": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "我已有账号"
+          }
+        }
+      }
+    },
+    "Imperial": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "英制"
+          }
+        }
+      }
+    },
+    "Incorrect email or password": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "邮箱或密码错误"
+          }
+        }
+      }
+    },
+    "Log in": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "登录"
+          }
+        }
+      }
+    },
+    "Metric": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "公制"
+          }
+        }
+      }
+    },
+    "MoveVitals on the web": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "网页版 MoveVitals"
+          }
+        }
+      }
+    },
+    "Name": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "姓名"
+          }
+        }
+      }
+    },
+    "Nearby sensors": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "附近的传感器"
+          }
+        }
+      }
+    },
+    "New reading": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重新测量"
+          }
+        }
+      }
+    },
+    "No activities yet": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "还没有活动"
+          }
+        }
+      }
+    },
+    "No data yet": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "还没有数据"
+          }
+        }
+      }
+    },
+    "Not connected": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未连接"
+          }
+        }
+      }
+    },
+    "Not enough clean beats. Sit still and try again.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "有效心跳不足，请保持静止后重试。"
+          }
+        }
+      }
+    },
+    "Off: Apple Health and Bluetooth data stay on this iPhone. Data already in the cloud is kept until you delete it on the web.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关闭：Apple 健康和蓝牙数据只保存在这台 iPhone 上。已在云端的数据会保留，直到你在网页上删除。"
+          }
+        }
+      }
+    },
+    "On this iPhone": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本机"
+          }
+        }
+      }
+    },
+    "On: Apple Health and Bluetooth data upload to your account and appear on the web and your other devices.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "开启：Apple 健康和蓝牙数据会上传到你的账户，并显示在网页和其他设备上。"
+          }
+        }
+      }
+    },
+    "Open connections": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开连接页面"
+          }
+        }
+      }
+    },
+    "Password": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "密码"
+          }
+        }
+      }
+    },
+    "Password (at least 8 characters)": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "密码（至少 8 位）"
+          }
+        }
+      }
+    },
+    "Please enter a valid email": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "请输入有效的邮箱"
+          }
+        }
+      }
+    },
+    "Polar H10 / heart-rate strap": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Polar H10 / 心率带"
+          }
+        }
+      }
+    },
+    "Privacy Policy": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "隐私政策"
+          }
+        }
+      }
+    },
+    "Readiness": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "准备度"
+          }
+        }
+      }
+    },
+    "Ready": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已就绪"
+          }
+        }
+      }
+    },
+    "Recovery": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "恢复分"
+          }
+        }
+      }
+    },
+    "Respiratory rate": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "呼吸频率"
+          }
+        }
+      }
+    },
+    "Resting heart rate": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "静息心率"
+          }
+        }
+      }
+    },
+    "Save reading": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存测量"
+          }
+        }
+      }
+    },
+    "Saved to MoveVitals": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已保存到 MoveVitals"
+          }
+        }
+      }
+    },
+    "Searching… wet the strap's electrodes and put it on.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正在搜索… 请润湿心率带电极并佩戴好。"
+          }
+        }
+      }
+    },
+    "Settings": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "设置"
+          }
+        }
+      }
+    },
+    "Sign out": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "退出登录"
+          }
+        }
+      }
+    },
+    "Sign out of MoveVitals on this iPhone?": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "要在这台 iPhone 上退出 MoveVitals 吗？"
+          }
+        }
+      }
+    },
+    "Sign-in": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "登录方式"
+          }
+        }
+      }
+    },
+    "Sign-ups are closed": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已关闭注册"
+          }
+        }
+      }
+    },
+    "Sit still and breathe normally · %lld s left · %lld beats": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保持静止、正常呼吸 · 剩余 %lld 秒 · %lld 次心跳"
+          }
+        }
+      }
+    },
+    "Sleep": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "睡眠"
+          }
+        }
+      }
+    },
+    "Sleep score": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "睡眠评分"
+          }
+        }
+      }
+    },
+    "Something went wrong (%@)": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "出错了（%@）"
+          }
+        }
+      }
+    },
+    "Steps": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "步数"
+          }
+        }
+      }
+    },
+    "Strain": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Strain"
+          }
+        }
+      }
+    },
+    "Sync now": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "立即同步"
+          }
+        }
+      }
+    },
+    "Synced %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@同步"
+          }
+        }
+      }
+    },
+    "Syncing…": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "同步中…"
+          }
+        }
+      }
+    },
+    "Take a 2-minute HRV reading": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "进行 2 分钟 HRV 测量"
+          }
+        }
+      }
+    },
+    "Terms of Service": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "服务条款"
+          }
+        }
+      }
+    },
+    "This email is already registered": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "该邮箱已注册"
+          }
+        }
+      }
+    },
+    "To choose which data MoveVitals can read, open Settings › Health › Data Access & Devices › MoveVitals.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "如需选择 MoveVitals 可读取的数据，请前往 设置 › 健康 › 数据访问与设备 › MoveVitals。"
+          }
+        }
+      }
+    },
+    "Today": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今日"
+          }
+        }
+      }
+    },
+    "Total energy": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "总消耗"
+          }
+        }
+      }
+    },
+    "Turn on Bluetooth to connect a sensor.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开蓝牙以连接传感器。"
+          }
+        }
+      }
+    },
+    "Units": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "单位"
+          }
+        }
+      }
+    },
+    "VO2 max": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最大摄氧量"
+          }
+        }
+      }
+    },
+    "WHOOP, Apple Health, Strava, Garmin, Polar and more — every value with its source, in one place.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "WHOOP、Apple 健康、Strava、Garmin、Polar 等——每个数值都标明来源，集中在一处。"
+          }
+        }
+      }
+    },
+    "WHOOP, Oura, Garmin, Strava, Polar, Withings and others sync in the cloud — even when your phone is off.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "WHOOP、Oura、Garmin、Strava、Polar、Withings 等在云端同步——即使手机关机也不受影响。"
+          }
+        }
+      }
+    },
+    "Weight": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "体重"
+          }
+        }
+      }
+    },
+    "Workouts from Apple Watch, Strava, Garmin, Zwift and other sources appear here — duplicates merged into one.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "来自 Apple Watch、Strava、Garmin、Zwift 等来源的训练会显示在这里——重复记录自动合并。"
+          }
+        }
+      }
+    },
+    "Your Google account has no verified email": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你的 Google 账号没有已验证的邮箱"
+          }
+        }
+      }
+    },
+    "Your health data hub": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你的健康数据中枢"
+          }
+        }
+      }
+    },
+    "bpm": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "次/分"
+          }
+        }
+      }
+    },
+    "· %lld sources merged": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "· 已合并 %lld 个来源"
+          }
+        }
+      }
+    },
+    "Sign in with Apple failed, please try again": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通过 Apple 登录失败，请重试"
+          }
+        }
+      }
+    }
+  }
+}

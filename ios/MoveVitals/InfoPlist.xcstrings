@@ -1,0 +1,46 @@
+{
+  "sourceLanguage": "en",
+  "version": "1.0",
+  "strings": {
+    "NSHealthShareUsageDescription": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MoveVitals 会读取你的训练、心率、HRV、睡眠、步数和身体测量数据，与你的其他设备放在一起查看。你可以自行选择共享内容；关闭云端同步时，任何数据都不会离开你的手机。"
+          }
+        }
+      }
+    },
+    "NSHealthUpdateUsageDescription": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MoveVitals 不会写入 Apple 健康。"
+          }
+        }
+      }
+    },
+    "NSBluetoothAlwaysUsageDescription": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MoveVitals 会连接 Polar H10 等心率传感器，以记录心率和 HRV。"
+          }
+        }
+      }
+    },
+    "CFBundleDisplayName": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MoveVitals"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+name: Integration request
+description: Ask for support for a device or platform, or propose building one
+labels: [integration]
+body:
+  - type: input
+    id: device
+    attributes:
+      label: Device or platform
+      placeholder: e.g. Amazfit Balance, Hammerhead Karoo
+    validations:
+      required: true
+  - type: input
+    id: docs
+    attributes:
+      label: Official API documentation
+      description: MoveVitals only uses official APIs — no scraping or reverse engineering.
+  - type: dropdown
+    id: access
+    attributes:
+      label: API access
+      options: [Public self-serve, Requires approval, Partners only, On-device only (HealthKit / Health Connect / BLE), Not sure]
+  - type: checkboxes
+    id: contribute
+    attributes:
+      label: Contribution
+      options:
+        - label: I'd like to build this adapter myself (see docs/adding-a-provider.md)

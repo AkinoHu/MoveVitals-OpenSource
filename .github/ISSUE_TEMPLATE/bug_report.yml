@@ -1,0 +1,31 @@
+name: Bug report
+description: Something isn't working as expected
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Connect …\n2. Open …\n3. See …"
+  - type: input
+    id: provider
+    attributes:
+      label: Provider involved (if any)
+      placeholder: WHOOP, Strava, Polar, Garmin…
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where are you running MoveVitals?
+      options: [movevitals.com, Self-hosted, Local development]
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Please remove tokens, emails and any health data before pasting.

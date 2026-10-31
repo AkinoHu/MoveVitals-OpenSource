@@ -1,0 +1,326 @@
+@import "tailwindcss";
+
+/* MoveVitals design tokens: monochrome, with orange reserved for key actions
+   and for drawing attention (selected value, conflict). */
+:root {
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #fafafa;
+  --surface-3: #f2f2f2;
+  --border: #eaeaea;
+  --border-strong: #d4d4d4;
+  --text: #0a0a0a;
+  --muted: #6b6b6b;
+  --faint: #a3a3a3;
+  --accent: #ff6b1a;
+  --accent-hover: #ff7f38;
+  --accent-ink: #0a0a0a;
+  --warn: #e0560a;
+  --warn-bg: #fff3eb;
+  --danger: #e5484d;
+  --grid: rgba(0, 0, 0, 0.06);
+}
+
+:root[data-theme="dark"] {
+    --bg: #000000;
+    --surface: #0a0a0a;
+    --surface-2: #111111;
+    --surface-3: #1a1a1a;
+    --border: #232323;
+    --border-strong: #333333;
+    --text: #ededed;
+    --muted: #a1a1a1;
+    --faint: #6b6b6b;
+    --accent: #ff6b1a;
+    --accent-hover: #ff8540;
+    --accent-ink: #0a0a0a;
+    --warn: #ff8a4c;
+    --warn-bg: #2a1407;
+    --danger: #ff6369;
+    --grid: rgba(255, 255, 255, 0.07);
+  }
+
+/* No-JS fallback: follow the OS when no explicit theme is set. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --bg: #000000;
+    --surface: #0a0a0a;
+    --surface-2: #111111;
+    --surface-3: #1a1a1a;
+    --border: #232323;
+    --border-strong: #333333;
+    --text: #ededed;
+    --muted: #a1a1a1;
+    --faint: #6b6b6b;
+    --accent: #ff6b1a;
+    --accent-hover: #ff8540;
+    --accent-ink: #0a0a0a;
+    --warn: #ff8a4c;
+    --warn-bg: #2a1407;
+    --danger: #ff6369;
+    --grid: rgba(255, 255, 255, 0.07);
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+
+@custom-variant dark {
+  &:where([data-theme="dark"], [data-theme="dark"] *) {
+    @slot;
+  }
+  @media (prefers-color-scheme: dark) {
+    &:where(:root:not([data-theme]), :root:not([data-theme]) *) {
+      @slot;
+    }
+  }
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-line: var(--border);
+  --color-line-strong: var(--border-strong);
+  --color-ink: var(--text);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-ink: var(--accent-ink);
+  --color-warn: var(--warn);
+  --color-warn-bg: var(--warn-bg);
+  --color-danger: var(--danger);
+  /* Latin: Inter. Chinese: Noto Sans SC/TC (order set per locale on <html>). */
+  --font-sans: var(--font-inter), var(--font-cjk), "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  /* Logo-style headlines: Russo One for Latin, Noto Sans 700 for Chinese. */
+  --font-display: var(--font-russo), var(--font-cjk), var(--font-inter), sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-weight: 400;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* iOS Safari zooms the page when a focused field is under 16px. */
+@media (max-width: 767px) {
+  input:not([type="checkbox"], [type="radio"], [type="range"]),
+  select,
+  textarea {
+    font-size: 16px;
+  }
+}
+
+/* Health metrics and chart numbers: Inter with tabular figures, so digits
+   keep their width and values don't jitter when they update. */
+.tnum,
+svg text {
+  font-family: var(--font-inter), var(--font-cjk), sans-serif;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+}
+
+/* Russo One ships a single weight; never fake-bold it. Chinese glyphs fall
+   through to Noto Sans at 700. */
+.font-display {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-synthesis: none;
+  letter-spacing: -0.01em;
+}
+
+/* Fine background grid used behind hero sections. */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, var(--grid) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+/* Line charts draw in once, then stay put. */
+.chart-draw {
+  stroke-dasharray: var(--len);
+  stroke-dashoffset: var(--len);
+  animation: chart-draw 1400ms cubic-bezier(0.22, 0.7, 0.3, 1) forwards;
+}
+@keyframes chart-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .chart-draw {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Endless logo rows: content is duplicated, so moving by half loops cleanly. */
+.marquee {
+  animation: marquee var(--marquee-duration, 48s) linear infinite;
+}
+.marquee-reverse {
+  animation-direction: reverse;
+}
+.group:hover .marquee,
+.group:focus-within .marquee {
+  animation-play-state: paused;
+}
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee {
+    animation: none;
+  }
+}
+
+.prose-legal h2 { font-size: 1.15rem; font-weight: 600; margin: 2rem 0 0.5rem; letter-spacing: -0.01em; }
+.prose-legal h3 { font-weight: 600; margin: 1.25rem 0 0.25rem; }
+.prose-legal p, .prose-legal li { color: var(--muted); line-height: 1.75; }
+.prose-legal ul { list-style: disc; padding-left: 1.25rem; margin: 0.5rem 0; }
+.prose-legal a { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
+
+/* Guide articles */
+.prose-article { font-size: 16.5px; line-height: 1.8; color: var(--text); }
+.prose-article > * + * { margin-top: 1.1em; }
+.prose-article h2 { font-size: 1.55rem; font-weight: 600; letter-spacing: -0.02em; line-height: 1.3; margin-top: 2.4em; scroll-margin-top: 88px; }
+.prose-article h3 { font-size: 1.18rem; font-weight: 600; letter-spacing: -0.01em; margin-top: 1.9em; scroll-margin-top: 88px; }
+.prose-article h4 { font-weight: 600; margin-top: 1.5em; }
+.prose-article h2 .anchor, .prose-article h3 .anchor { margin-left: .35em; color: var(--faint); opacity: 0; text-decoration: none; transition: opacity .15s; }
+.prose-article h2:hover .anchor, .prose-article h3:hover .anchor { opacity: 1; }
+.prose-article p, .prose-article li { color: color-mix(in oklab, var(--text) 86%, var(--muted)); }
+.prose-article a { color: var(--text); text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 3px; }
+.prose-article a:hover { color: var(--accent); }
+.prose-article strong { font-weight: 600; color: var(--text); }
+.prose-article ul { list-style: disc; padding-left: 1.4rem; }
+.prose-article ol { list-style: decimal; padding-left: 1.4rem; }
+.prose-article li + li { margin-top: .35em; }
+.prose-article li::marker { color: var(--faint); }
+.prose-article blockquote { border-left: 3px solid var(--accent); padding: .2em 0 .2em 1.1em; color: var(--muted); }
+.prose-article code { font-family: var(--font-mono, ui-monospace, monospace); font-size: .88em; background: var(--surface-2); border: 1px solid var(--border); border-radius: 5px; padding: .1em .35em; }
+.prose-article pre { background: var(--surface-2); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.1rem; overflow-x: auto; font-size: 13.5px; line-height: 1.65; }
+.prose-article pre code { background: none; border: 0; padding: 0; }
+.prose-article hr { border: 0; border-top: 1px solid var(--border); margin: 2.4em 0; }
+.prose-article figure img { border-radius: 10px; border: 1px solid var(--border); }
+.prose-article figcaption { margin-top: .5em; font-size: 13px; color: var(--muted); text-align: center; }
+.prose-article .table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 10px; }
+.prose-article table { width: 100%; border-collapse: collapse; font-size: 14px; font-variant-numeric: tabular-nums; }
+.prose-article th { text-align: left; font-weight: 600; background: var(--surface-2); }
+.prose-article th, .prose-article td { padding: .6em .9em; border-bottom: 1px solid var(--border); vertical-align: top; }
+.prose-article tr:last-child td { border-bottom: 0; }
+
+/* ---- Homepage "data integrity" reconciliation card (CSS-only) ------------ */
+.recon-orb {
+  position: absolute;
+  inset: -12% -8%;
+  z-index: -1;
+  background: radial-gradient(55% 55% at 70% 45%, color-mix(in oklab, var(--accent) 22%, transparent), transparent 70%);
+  filter: blur(28px);
+  opacity: 0.8;
+}
+.recon-card {
+  /* Glass: faint accent wash over the surface, hairline border, soft glow. */
+  background:
+    linear-gradient(145deg, color-mix(in oklab, var(--accent) 9%, var(--surface)) 0%, var(--surface) 55%),
+    var(--surface);
+  border: 1px solid color-mix(in oklab, var(--accent) 28%, var(--border));
+  box-shadow:
+    0 0 0 1px color-mix(in oklab, var(--accent) 6%, transparent),
+    0 18px 50px -24px color-mix(in oklab, var(--accent) 45%, transparent),
+    inset 0 1px 0 color-mix(in oklab, white 35%, transparent);
+  backdrop-filter: blur(10px);
+}
+.recon-chip {
+  background: color-mix(in oklab, var(--surface-2) 80%, transparent);
+  border: 1px solid var(--border);
+  animation: recon-in 600ms cubic-bezier(0.22, 0.7, 0.3, 1) both;
+  animation-delay: calc(var(--i, 0) * 90ms);
+}
+.recon-chip-win {
+  border-color: color-mix(in oklab, var(--accent) 55%, var(--border));
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--accent) 12%, transparent);
+}
+.recon-result {
+  background: color-mix(in oklab, var(--surface) 70%, transparent);
+  border: 1px solid color-mix(in oklab, var(--accent) 40%, var(--border));
+  box-shadow: 0 10px 30px -18px color-mix(in oklab, var(--accent) 60%, transparent);
+  animation: recon-in 600ms cubic-bezier(0.22, 0.7, 0.3, 1) 300ms both;
+}
+.recon-line {
+  stroke: var(--border-strong);
+  stroke-width: 1.5;
+  stroke-dasharray: 3 5;
+  vector-effect: non-scaling-stroke;
+  animation: recon-flow 1.6s linear infinite;
+}
+.recon-line-win {
+  stroke: var(--accent);
+  stroke-width: 2;
+  stroke-dasharray: 6 5;
+}
+.recon-vline {
+  background: repeating-linear-gradient(to bottom, var(--accent) 0 4px, transparent 4px 9px);
+  animation: recon-vflow 1.2s linear infinite;
+}
+.recon-dot {
+  animation: recon-pulse 2s ease-in-out infinite;
+}
+.recon-ring {
+  stroke-dasharray: 41;
+  stroke-dashoffset: 0;
+  animation: recon-ring 3.6s ease-in-out infinite;
+}
+@keyframes recon-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+@keyframes recon-flow {
+  to {
+    stroke-dashoffset: -16;
+  }
+}
+@keyframes recon-vflow {
+  to {
+    background-position-y: 9px;
+  }
+}
+@keyframes recon-pulse {
+  50% {
+    opacity: 0.35;
+    transform: scale(1.5);
+  }
+}
+@keyframes recon-ring {
+  0%,
+  20% {
+    stroke-dashoffset: 41;
+  }
+  50%,
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .recon-chip,
+  .recon-result,
+  .recon-line,
+  .recon-vline,
+  .recon-dot,
+  .recon-ring {
+    animation: none;
+  }
+}
